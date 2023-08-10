@@ -1,0 +1,1 @@
+My business card website. Based on basic HTML and CSS using the Bootstrap library. The site contains some sections such as: about, my project, certificates and others. You can also view and download resumes in various formats.

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="./scripts/favicon.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar-panel"></div>
+    <div class="container my-5 col-10">
+      <div class="row">
+        <div class="col-lg-4">
+          <p class="lead text-muted">
+            On this page, you can download my CV. Click on the corresponding
+            image to select the required format.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <img
+              src="./image/cv-pdf-logo.png"
+              class="card-img-top resume-image"
+              alt="cv-pdf-logo"
+              onclick="openCertificate('./image/vadim-chaiko-cv.pdf')"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <img
+              src="./image/cv-jpg-logo.png"
+              class="card-img-top resume-image"
+              alt="cv-jpg-logo"
+              onclick="openCertificate('./image/vadim-chaiko-cv.jpg')"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openCertificate(imageUrl) {
+        window.open(imageUrl, '_blank');
+      }
+    </script>
+  </body>
+</html>
+<script src="./scripts/navbar-active.js"></script>
